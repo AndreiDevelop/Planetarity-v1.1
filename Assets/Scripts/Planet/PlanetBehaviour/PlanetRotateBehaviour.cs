@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlanetExplotionBehaviour : MonoBehaviour, IPlanetBehaviour
+public class PlanetRotateBehaviour : MonoBehaviour, ISimpleBehaviour
 {
     // Start is called before the first frame update
     void Start()

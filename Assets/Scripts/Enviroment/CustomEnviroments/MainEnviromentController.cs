@@ -2,17 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlanetSolarSystem : MonoBehaviour, IPlanet
+public class MainEnviromentController : EnviromentController
 {
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        SwitchEnviromentOn<EnviromentSolarSystem>();
     }
 }

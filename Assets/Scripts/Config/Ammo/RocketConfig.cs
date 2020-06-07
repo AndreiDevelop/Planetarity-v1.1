@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(fileName = "AmmoConfigRandom ", menuName = "ScriptableObjects/AmmoConfigRandom ")]
+[CreateAssetMenu(fileName = "RocketConfigRandom ", menuName = "ScriptableObjects/RocketConfigRandom ")]
 public class RocketConfig : AmmoConfig
 {
 

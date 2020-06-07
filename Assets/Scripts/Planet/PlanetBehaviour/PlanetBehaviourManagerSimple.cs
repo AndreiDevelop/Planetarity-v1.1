@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlanetBehaviourManagerSimple : MonoBehaviour, IPlanetBehaviourManager
+public class PlanetBehaviourManagerSimple : MonoBehaviour, ISimpleBehaviourManager
 {
 
 }
