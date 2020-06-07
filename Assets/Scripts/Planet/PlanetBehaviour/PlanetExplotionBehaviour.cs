@@ -1,18 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlanetExplotionBehaviour : MonoBehaviour, ISimpleBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Activate(Action onActivated, params object[] param)
     {
-        
+        onActivated?.Invoke();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Deacivate(Action onDeActivated, params object[] param)
     {
-        
+        onDeActivated?.Invoke();
     }
 }
