@@ -18,7 +18,7 @@ public class PlanetManager : MonoBehaviour, IPlanetManager
     {
         _planetManagerConfig.OrbitRadiusArray.Shuffle();
 
-        for (int i=0;i<_planetManagerConfig.OrbitRadiusArray.Length;i++)
+        for (int i=0;i<_planetManagerConfig.RandomPlanetCount; i++)
         {
             PlanetHolder planetHolder = Instantiate(_planetHolderPrefab.gameObject, transform).GetComponent<PlanetHolder>();
             
