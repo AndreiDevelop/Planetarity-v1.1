@@ -6,7 +6,8 @@ public class PlanetManager : MonoBehaviour, IPlanetManager
 {
     [SerializeField] private PlanetManagerConfig _planetManagerConfig;
     [SerializeField] private PlanetHolder _planetHolderPrefab;
-    [SerializeField] private Planet _planet;
+    [SerializeField] private Planet _planetAI;
+    [SerializeField] private Planet _planetPlayer;
 
     void Start()
     {
@@ -15,10 +16,22 @@ public class PlanetManager : MonoBehaviour, IPlanetManager
 
     private void Initialize()
     {
-        for(int i=0;i<_planetManagerConfig.OrbitRadiusArray.Length;i++)
+        _planetManagerConfig.OrbitRadiusArray.Shuffle();
+
+        for (int i=0;i<_planetManagerConfig.OrbitRadiusArray.Length;i++)
         {
             PlanetHolder planetHolder = Instantiate(_planetHolderPrefab.gameObject, transform).GetComponent<PlanetHolder>();
-            planetHolder.Initialize(_planet, _planetManagerConfig.OrbitRadiusArray[i]);
+            
+            if (i == 0)
+            {
+                planetHolder.Initialize(_planetPlayer, _planetManagerConfig.OrbitRadiusArray[i]);
+            }
+            else
+            {
+                planetHolder.Initialize(_planetAI, _planetManagerConfig.OrbitRadiusArray[i]);
+            }
+            
+            
         }
     }
 }

@@ -10,13 +10,13 @@ public class PlanetHolder : MonoBehaviour
     public void Initialize(Planet planet, float radius)
     {
         Transform planetTransform = Instantiate(planet.gameObject, transform).transform;
-        planetTransform.localPosition = new Vector3(radius, 0, 0);
+        planetTransform.localPosition = new Vector3(0, radius, 0);
 
         _speedRotate = _planetHolderConfig.SpeedRotation;
 
         float randomRotateAngle = Random.Range(-360f, 360f);
 
-        transform.localEulerAngles = new Vector3(0f, randomRotateAngle, 0f);
+        transform.localEulerAngles = new Vector3(0f, 0f, randomRotateAngle);
 
         _isInitialized = true;
     }
@@ -25,7 +25,7 @@ public class PlanetHolder : MonoBehaviour
     {
         if(_isInitialized)
         {
-            transform.Rotate(0, Time.deltaTime * _speedRotate, 0);
+            transform.Rotate(0f, 0f, Time.deltaTime * _speedRotate);
         }        
     }
 }
