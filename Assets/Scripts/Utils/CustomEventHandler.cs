@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class CustomEventHandler
 {
-    public delegate void EventHandler(params object[] param);
+    public delegate void EventHandler();
 }

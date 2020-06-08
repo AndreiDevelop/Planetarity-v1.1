@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ShootController : MonoBehaviour
 {
@@ -30,12 +28,12 @@ public class ShootController : MonoBehaviour
         _input.OnInputUp -= StopAimAndShoot;
     }
 
-    private void StartAim(params object[] param)
+    private void StartAim()
     {
         _aim.StartAim(null);
     }
 
-    private void StopAimAndShoot(params object[] param)
+    private void StopAimAndShoot()
     {
         _aim.StopAim(Shoot);
     }

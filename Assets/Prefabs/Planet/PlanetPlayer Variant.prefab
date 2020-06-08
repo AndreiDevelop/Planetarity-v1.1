@@ -24,6 +24,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21b2dc79b089db0419f8b5e0b875d4c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &7059607457303076271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 893067859926535996}
+  - component: {fileID: 5599195482963789108}
+  m_Layer: 12
+  m_Name: PlanetAimZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &893067859926535996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7059607457303076271}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5547180344689450718}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &5599195482963789108
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7059607457303076271}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.5
 --- !u!1001 &1148873542047205794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35,6 +82,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlanetPlayer Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834073896342703980, guid: 640d3b60708ec264894bcb77646c9047,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656143137402567430, guid: 640d3b60708ec264894bcb77646c9047,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4830696933648488316, guid: 640d3b60708ec264894bcb77646c9047,
         type: 3}
@@ -93,6 +150,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 640d3b60708ec264894bcb77646c9047, type: 3}
+--- !u!4 &5547180344689450718 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4830696933648488316, guid: 640d3b60708ec264894bcb77646c9047,
+    type: 3}
+  m_PrefabInstance: {fileID: 1148873542047205794}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7431577975967940524 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7553621439945831950, guid: 640d3b60708ec264894bcb77646c9047,

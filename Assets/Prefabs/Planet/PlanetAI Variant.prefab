@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &635019571875218080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8209830410719601385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cd983025a68cd243bdb705b711934c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _layerCollide: Player
+  _maxDistance: 50
 --- !u!114 &2231496198653084836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10,6 +24,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c72f6604b3315c34f93bb10727b9f9ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6272220770826804027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8209830410719601385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c974543bdf4e5343ab1ad714aff0935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7314386630340656734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8209830410719601385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c974543bdf4e5343ab1ad714aff0935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1818600955799327975
