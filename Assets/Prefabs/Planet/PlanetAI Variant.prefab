@@ -1,12 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &2187579195117289623
+--- !u!114 &2231496198653084836
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5061470554943783588}
+  m_GameObject: {fileID: 8209830410719601385}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c72f6604b3315c34f93bb10727b9f9ed, type: 3}
@@ -22,7 +22,7 @@ PrefabInstance:
     - target: {fileID: 1834073896342703980, guid: 640d3b60708ec264894bcb77646c9047,
         type: 3}
       propertyPath: m_Name
-      value: PlanetAI
+      value: PlanetAI Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4830696933648488316, guid: 640d3b60708ec264894bcb77646c9047,
         type: 3}
@@ -81,9 +81,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 640d3b60708ec264894bcb77646c9047, type: 3}
---- !u!1 &5061470554943783588 stripped
+--- !u!1 &8209830410719601385 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6845756517193143875, guid: 640d3b60708ec264894bcb77646c9047,
+  m_CorrespondingSourceObject: {fileID: 7553621439945831950, guid: 640d3b60708ec264894bcb77646c9047,
     type: 3}
   m_PrefabInstance: {fileID: 1818600955799327975}
   m_PrefabAsset: {fileID: 0}

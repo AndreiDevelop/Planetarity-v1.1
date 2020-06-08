@@ -1,5 +1,17 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &5134819740023305675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7431577975967940524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21b2dc79b089db0419f8b5e0b875d4c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7014603000122389684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22,7 +34,7 @@ PrefabInstance:
     - target: {fileID: 1834073896342703980, guid: 640d3b60708ec264894bcb77646c9047,
         type: 3}
       propertyPath: m_Name
-      value: PlanetPlayer
+      value: PlanetPlayer Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4830696933648488316, guid: 640d3b60708ec264894bcb77646c9047,
         type: 3}
@@ -81,6 +93,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 640d3b60708ec264894bcb77646c9047, type: 3}
+--- !u!1 &7431577975967940524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7553621439945831950, guid: 640d3b60708ec264894bcb77646c9047,
+    type: 3}
+  m_PrefabInstance: {fileID: 1148873542047205794}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5832334340344602593 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6845756517193143875, guid: 640d3b60708ec264894bcb77646c9047,

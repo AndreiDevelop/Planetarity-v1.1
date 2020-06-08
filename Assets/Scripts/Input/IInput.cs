@@ -1,5 +1,6 @@
 ﻿
 public interface IInput
 {
-    event CustomEventHandler.EventHandler DoInput;
+    event CustomEventHandler.EventHandler OnInputDown;
+    event CustomEventHandler.EventHandler OnInputUp;
 }

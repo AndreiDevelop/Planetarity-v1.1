@@ -31,7 +31,7 @@ Transform:
   m_LocalPosition: {x: 4.14, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7008093547569071470}
+  - {fileID: 4005744123867502630}
   - {fileID: 1980089303891338798}
   - {fileID: 3070889626279950616}
   - {fileID: 2771256773055576455}
@@ -153,6 +153,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142554ba94996554e90a87e61652ebab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &3127775033758168916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2465829535449825447}
+  - component: {fileID: 175157757067964528}
+  m_Layer: 10
+  m_Name: Aim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2465829535449825447
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3127775033758168916}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7008093547569071470}
+  m_Father: {fileID: 4005744123867502630}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &175157757067964528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3127775033758168916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbfbe7c6cda236f45b49c93af46c28ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speedRotate: 100
 --- !u!1 &4656143137402567430
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,11 +338,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6845756517193143875}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.925, z: -0.012}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.925, z: -0.012}
   m_LocalScale: {x: 0.13593149, y: 0.13, z: 0.20537145}
   m_Children: []
-  m_Father: {fileID: 4830696933648488316}
+  m_Father: {fileID: 2465829535449825447}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8318620295996934642
@@ -359,7 +404,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ammoPrefab: {fileID: 7268445649615110031, guid: c505e1251eec7284abeb5b5739c99a3b,
     type: 3}
-  _forceMultiplayer: 300
+  _shootPower: 300
+--- !u!1 &7553621439945831950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4005744123867502630}
+  - component: {fileID: 5386430308517444794}
+  m_Layer: 10
+  m_Name: ShootController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4005744123867502630
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7553621439945831950}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2465829535449825447}
+  m_Father: {fileID: 4830696933648488316}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5386430308517444794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7553621439945831950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c10dcd04eeaf4ff4f957ae42beb1ccbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _aimObject: {fileID: 3127775033758168916}
+  _gunObject: {fileID: 6845756517193143875}
 --- !u!1001 &672251206818921631
 PrefabInstance:
   m_ObjectHideFlags: 0
