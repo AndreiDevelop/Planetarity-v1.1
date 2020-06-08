@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6941568877481368920}
   - component: {fileID: 3708551098455368689}
   - component: {fileID: 5096277984887912826}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7180268264675520835}
   - component: {fileID: 6728815440464040436}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PlanetExplotionBehaviour
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,7 +163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2465829535449825447}
   - component: {fileID: 175157757067964528}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Aim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,6 +198,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedRotate: 200
+--- !u!1 &3463447899603388753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 777045008422097285}
+  - component: {fileID: 8332055810980336280}
+  m_Layer: 0
+  m_Name: AmmoManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &777045008422097285
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3463447899603388753}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4005744123867502630}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8332055810980336280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3463447899603388753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87eba6f533704cd408e918f31b14a4ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rocketPrefab: {fileID: 6136221453489763376, guid: c505e1251eec7284abeb5b5739c99a3b,
+    type: 3}
+  _rocketConfigArray:
+  - {fileID: 11400000, guid: 945ea920dbd083b489b7cbadb434ec42, type: 2}
+  - {fileID: 11400000, guid: 13d3a04225cb0384c9f79af3076d38cb, type: 2}
+  - {fileID: 11400000, guid: a886c406290962c48acde0983dc614b1, type: 2}
 --- !u!1 &4656143137402567430
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,7 +260,7 @@ GameObject:
   - component: {fileID: 7433353325733615570}
   - component: {fileID: 3596311994833613875}
   m_Layer: 10
-  m_Name: Health
+  m_Name: HealthPlanet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -290,7 +339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2771256773055576455}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PlanetBehaviourHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +373,7 @@ GameObject:
   - component: {fileID: 8318620295996934642}
   - component: {fileID: 7755255935089926788}
   - component: {fileID: 7739730058644796343}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -402,9 +451,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e28e972a0114a448d6d2916d902078, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ammoPrefab: {fileID: 7268445649615110031, guid: c505e1251eec7284abeb5b5739c99a3b,
-    type: 3}
-  _shootPower: 300
 --- !u!1 &7553621439945831950
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +461,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4005744123867502630}
   - component: {fileID: 5386430308517444794}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: ShootController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,6 +480,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2465829535449825447}
+  - {fileID: 777045008422097285}
   m_Father: {fileID: 4830696933648488316}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -451,6 +498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _aimObject: {fileID: 3127775033758168916}
   _gunObject: {fileID: 6845756517193143875}
+  _ammoManager: {fileID: 8332055810980336280}
 --- !u!1001 &672251206818921631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -466,7 +514,7 @@ PrefabInstance:
     - target: {fileID: 875465782278121288, guid: ec041529db240164bad1dc41dfc90491,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1310231185271200433, guid: ec041529db240164bad1dc41dfc90491,
         type: 3}

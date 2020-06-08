@@ -1,18 +1,24 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class RocketManager : MonoBehaviour, IAmmoManager
+public class RocketManager : AmmoManager
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    [SerializeField] private Rocket _rocketPrefab;
+    [SerializeField] private RocketConfig[] _rocketConfigArray;
+
+    public override Ammo Ammo 
+    { 
+        get => _rocketPrefab; 
+        set => _rocketPrefab = value as Rocket; 
     }
 
-    // Update is called once per frame
-    void Update()
+    void Awake()
     {
-        
+        InitializeAmmo();
+    }
+
+    public override void InitializeAmmo(params object[] param)
+    {
+        int index = Random.Range(0, _rocketConfigArray.Length - 1);
+        _rocketPrefab.Initialize(_rocketConfigArray[index]);
     }
 }

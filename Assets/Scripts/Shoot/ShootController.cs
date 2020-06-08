@@ -4,6 +4,8 @@ public class ShootController : MonoBehaviour
 {
     [SerializeField] private GameObject _aimObject;
     [SerializeField] private GameObject _gunObject;
+    [SerializeField] private AmmoManager _ammoManager;
+    public AmmoManager AmmoManager => _ammoManager;
 
     private IAim _aim;
     private IGun _gun;
@@ -40,6 +42,6 @@ public class ShootController : MonoBehaviour
 
     private void Shoot()
     {
-        _gun.Fire();
+        _gun.Fire(_ammoManager.Ammo.gameObject);
     }
 }
