@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0b0f609a6d35304a9dd6c802d20074e, type: 3}
-  m_Name: RocketConfigLight
+  m_Name: RocketConfigHeavy
   m_EditorClassIdentifier: 
-  _damage: 10
-  _acceleration: 300
-  _mass: 1
-  _coolDown: 2
+  _damage: 50
+  _acceleration: 600
+  _mass: 3
+  _coolDown: 0.25

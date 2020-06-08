@@ -9,18 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 057a96db880138a4fb08e4b30d8a8a6b, type: 3}
-  m_Name: PlanetManagerConfig
+  m_Script: {fileID: 11500000, guid: f0b0f609a6d35304a9dd6c802d20074e, type: 3}
+  m_Name: RocketConfigMiddle
   m_EditorClassIdentifier: 
-  _orbitRadiusArray:
-  - 12.5
-  - 14
-  - 5
-  - 6.5
-  - 8
-  - 15.5
-  - 9.5
-  - 2
-  - 11
-  - 3.5
-  _minMaxPlanetsCountRange: {x: 0, y: 10}
+  _damage: 25
+  _acceleration: 500
+  _mass: 2
+  _coolDown: 0.5
