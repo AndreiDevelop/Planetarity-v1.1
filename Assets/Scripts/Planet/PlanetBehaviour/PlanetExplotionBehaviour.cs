@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lean.Pool;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,8 +11,8 @@ public class PlanetExplotionBehaviour : MonoBehaviour, ISimpleBehaviour
 
     public void Activate(Action onActivated, params object[] param)
     {
-        GameObject explotion = Instantiate(_explotionParticleSystemPrefab, transform.position, transform.rotation).gameObject;
-        Destroy(explotion, _explotionLiveTime);
+        GameObject explotion = LeanPool.Spawn(_explotionParticleSystemPrefab, transform.position, transform.rotation).gameObject;
+        LeanPool.Despawn(explotion, _explotionLiveTime);
         onActivated?.Invoke();
     }
 

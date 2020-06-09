@@ -1,5 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Lean.Pool;
+using System.Collections;
 using UnityEngine;
 
 public class Rocket : Ammo
@@ -66,8 +66,8 @@ public class Rocket : Ammo
 
     private void DestroyRocket()
     {
-        GameObject explotion = Instantiate(_explotionParticleSystemPrefab, transform.position, transform.rotation).gameObject;
-        Destroy(explotion, _explotionLiveTime);
-        Destroy(gameObject);
+        GameObject explotion = LeanPool.Spawn(_explotionParticleSystemPrefab, transform.position, transform.rotation).gameObject;
+        LeanPool.Despawn(explotion, _explotionLiveTime);
+        LeanPool.Despawn(gameObject);
     }
 }
