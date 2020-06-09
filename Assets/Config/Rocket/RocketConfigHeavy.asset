@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: RocketConfigHeavy
   m_EditorClassIdentifier: 
   _damage: 50
-  _acceleration: 600
+  _acceleration: 500
   _mass: 3
-  _coolDown: 0.25
+  _coolDown: 1

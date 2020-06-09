@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: RocketConfigLight
   m_EditorClassIdentifier: 
   _damage: 10
-  _acceleration: 400
+  _acceleration: 500
   _mass: 1
-  _coolDown: 1
+  _coolDown: 0.5

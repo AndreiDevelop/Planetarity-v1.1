@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: RocketConfigMiddle
   m_EditorClassIdentifier: 
   _damage: 25
-  _acceleration: 500
+  _acceleration: 700
   _mass: 2
   _coolDown: 0.5
