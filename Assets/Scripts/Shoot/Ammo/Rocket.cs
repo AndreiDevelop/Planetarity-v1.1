@@ -6,6 +6,7 @@ public class Rocket : Ammo
 {
     public LayerMask destroyLayerMask;
 
+    [SerializeField] private ParticleSystem _explotionParticleSystemPrefab;
     [SerializeField] private RocketConfig _config;
     public RocketConfig Config
     {
@@ -20,6 +21,7 @@ public class Rocket : Ammo
     }
 
     private Rigidbody2D _rigidbody2D;
+    private float _selfDestroyTimeInSeconds = 10f;
 
     void Awake()
     {
@@ -39,13 +41,31 @@ public class Rocket : Ammo
     public void RocketLaunch(Vector3 direction)
     {
         _rigidbody2D.AddForce(direction * Config.Acceleration);
+        StartCoroutine(SelfDestroy());
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (((1 << collision.gameObject.layer) & destroyLayerMask) != 0)
         {
-            Destroy(gameObject);
+            DestroyRocket();
         }
+    }
+
+    void Update()
+    {
+        transform.up = _rigidbody2D.velocity;
+    }
+
+    private IEnumerator SelfDestroy()
+    {
+        yield return new WaitForSeconds(_selfDestroyTimeInSeconds);
+        DestroyRocket();
+    }
+
+    private void DestroyRocket()
+    {
+        Instantiate(_explotionParticleSystemPrefab, transform.position, transform.rotation);
+        Destroy(gameObject);
     }
 }
