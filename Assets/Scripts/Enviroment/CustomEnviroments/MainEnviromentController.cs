@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class MainEnviromentController : EnviromentController
 {
-    // Start is called before the first frame update
     void Start()
     {
-        SwitchEnviromentOn<EnviromentSolarSystem>();
+        SwitchEnviromentOn<EnviromentEmpty>();
     }
 }

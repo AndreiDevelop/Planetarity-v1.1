@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PageUIController : MonoBehaviour, IPageUIController
 {
+    [SerializeField] private EnviromentController _enviromentController;
+    public IEnviromentController EnviromentController => _enviromentController;
+
     private List<PageUI> pages;
     private Stack<PageUI> _pagesHistory;
-    //[SerializeField] private LoadBar _loadBar;
-    //[SerializeField] private CheckNetworkReachability _checkNetworkReachability;
 
     void Awake()
     {
@@ -17,9 +18,6 @@ public class PageUIController : MonoBehaviour, IPageUIController
     }
 
     #region IPageUIController
-
-    //public LoadBar loadBar { get { return _loadBar; } }
-    //public CheckNetworkReachability checkNetworkReachability { get { return _checkNetworkReachability; } }
 
     /// <summary>
     /// go to page type T where T:Page
@@ -33,7 +31,6 @@ public class PageUIController : MonoBehaviour, IPageUIController
             if (page.GetType() == typeof(T))
             {
                 pageActvate = page;
-                //PageSetActivate(page);
                 _pagesHistory.Push(page);
             }
             else
@@ -46,7 +43,6 @@ public class PageUIController : MonoBehaviour, IPageUIController
 
     public void SwitchPageBack()
     {
-        //_pagesHistory.Peek().isActivated = false;
         print(_pagesHistory.Peek().GetType());
         _pagesHistory.Pop();
         print(_pagesHistory.Peek().GetType());
@@ -56,7 +52,6 @@ public class PageUIController : MonoBehaviour, IPageUIController
             if (page.GetType() == _pagesHistory.Peek().GetType())
             {
                 pageActvate = page;
-                //PageSetActivate(page);
             }
             else
             {
