@@ -92,7 +92,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -132,4 +132,4 @@ MonoBehaviour:
   destroyLayerMask:
     serializedVersion: 2
     m_Bits: 3584
-  _config: {fileID: 11400000, guid: 13d3a04225cb0384c9f79af3076d38cb, type: 2}
+  _config: {fileID: 11400000, guid: 945ea920dbd083b489b7cbadb434ec42, type: 2}

@@ -106,6 +106,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7433353325733615570, guid: 640d3b60708ec264894bcb77646c9047,
+        type: 3}
+      propertyPath: _healthValue
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433353325733615570, guid: 640d3b60708ec264894bcb77646c9047,
+        type: 3}
+      propertyPath: _healtSlider
+      value: 
+      objectReference: {fileID: 8180841516440258593}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 640d3b60708ec264894bcb77646c9047, type: 3}
 --- !u!1 &8209830410719601385 stripped
@@ -124,5 +134,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c10dcd04eeaf4ff4f957ae42beb1ccbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8180841516440258593 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7544875096233106630, guid: 640d3b60708ec264894bcb77646c9047,
+    type: 3}
+  m_PrefabInstance: {fileID: 1818600955799327975}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
