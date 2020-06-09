@@ -4,7 +4,10 @@ public class Planet : MonoBehaviour, IPlanet
 {
     [SerializeField] private float _speedRotate = 0;
     [SerializeField] private bool _isInitialized = false;
+    
     [SerializeField] private Health _health;
+    public Health Health => _health;
+
     [SerializeField] private Transform _bodyTransform;
 
     private ISimpleBehaviourManager _behaviourManager;
@@ -37,8 +40,6 @@ public class Planet : MonoBehaviour, IPlanet
 
     private void OnHealthChange(float healtValue)
     {
-        Debug.Log(healtValue);
-
         if(healtValue == 0)
         {
             _behaviourManager.SelectBehaviour(typeof(PlanetExplotionBehaviour)).Activate(()=>gameObject.SetActive(false));

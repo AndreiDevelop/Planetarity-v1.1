@@ -9,6 +9,13 @@ public class PlanetManager : MonoBehaviour, IPlanetManager
     [SerializeField] private Planet _planetAI;
     [SerializeField] private Planet _planetPlayer;
 
+    private PlayerUIInjector _playerUIInjector;
+
+    void Awake()
+    {
+        _playerUIInjector = GetComponent<PlayerUIInjector>();
+    }
+
     void Start()
     {
         Initialize();
@@ -24,7 +31,10 @@ public class PlanetManager : MonoBehaviour, IPlanetManager
             
             if (i == 0)
             {
-                planetHolder.Initialize(_planetPlayer, _planetManagerConfig.OrbitRadiusArray[i]);
+                planetHolder.Initialize(_planetPlayer, _planetManagerConfig.OrbitRadiusArray[i],(planet)=>
+                {
+                    _playerUIInjector.Initialize(planet.Health);
+                });
             }
             else
             {
