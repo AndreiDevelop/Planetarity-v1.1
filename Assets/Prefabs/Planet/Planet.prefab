@@ -738,7 +738,7 @@ PrefabInstance:
     - target: {fileID: 943836262687019224, guid: ec041529db240164bad1dc41dfc90491,
         type: 3}
       propertyPath: m_Radius
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1310231185271200433, guid: ec041529db240164bad1dc41dfc90491,
         type: 3}
@@ -798,7 +798,7 @@ PrefabInstance:
     - target: {fileID: 7989066365343809008, guid: ec041529db240164bad1dc41dfc90491,
         type: 3}
       propertyPath: m_ForceMagnitude
-      value: -8
+      value: -15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec041529db240164bad1dc41dfc90491, type: 3}

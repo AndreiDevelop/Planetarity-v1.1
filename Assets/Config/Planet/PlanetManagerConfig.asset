@@ -13,14 +13,12 @@ MonoBehaviour:
   m_Name: PlanetManagerConfig
   m_EditorClassIdentifier: 
   _orbitRadiusArray:
-  - 8
-  - 12.5
-  - 15.5
-  - 2
-  - 9.5
-  - 11
+  - 9
   - 5
-  - 14
-  - 6.5
-  - 3.5
-  _minMaxPlanetsCountRange: {x: 5, y: 10}
+  - 11
+  - 3
+  - 15
+  - 7
+  - 17
+  - 13
+  _minMaxPlanetsCountRange: {x: 5, y: 8}
