@@ -22,6 +22,7 @@ public class Rocket : Ammo
 
     private Rigidbody2D _rigidbody2D;
     private float _selfDestroyTimeInSeconds = 10f;
+    private float _explotionLiveTime = 2f;
 
     void Awake()
     {
@@ -65,7 +66,8 @@ public class Rocket : Ammo
 
     private void DestroyRocket()
     {
-        Instantiate(_explotionParticleSystemPrefab, transform.position, transform.rotation);
+        GameObject explotion = Instantiate(_explotionParticleSystemPrefab, transform.position, transform.rotation).gameObject;
+        Destroy(explotion, _explotionLiveTime);
         Destroy(gameObject);
     }
 }

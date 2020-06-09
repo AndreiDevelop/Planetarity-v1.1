@@ -419,6 +419,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142554ba94996554e90a87e61652ebab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _explotionParticleSystemPrefab: {fileID: 5836521641664274819, guid: 90f1da19ebf6b9e418f12e30c29d8661,
+    type: 3}
 --- !u!1 &2244555780913059558
 GameObject:
   m_ObjectHideFlags: 0
